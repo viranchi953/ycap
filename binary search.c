@@ -10,7 +10,7 @@ int main()
     {
         scanf("%d", &A[i]);
     }
-    printf("search.\n");
+    printf("search no :\n");
     scanf("%d", &s);
     high = n - 1;
     mid = (low + high) / 2;
@@ -18,13 +18,9 @@ int main()
     {
         mid = (low + high) / 2;
         if (A[mid] < s)
-        {
             low = mid + 1;
-        }
         else
-        {
             high = mid - 1;
-        }
     }
     printf("no. %d found at index %d", A[mid], mid);
     return 0;
